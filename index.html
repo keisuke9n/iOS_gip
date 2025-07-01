@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>体重体調日記 | Metamorph</title>
+    <style>
+      /* Base */
+      :root {
+        --accent: #ff8c42;
+        --bg: #f7f7f8;
+        --text-main: #333;
+        --text-sub: #666;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", YuGothic, sans-serif;
+        background: var(--bg);
+        color: var(--text-main);
+        line-height: 1.7;
+      }
+
+      /* Hero */
+      header {
+        background: var(--accent);
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        letter-spacing: 0.05em;
+      }
+
+      .tagline {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+      }
+
+      /* Sections */
+      section {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: var(--accent);
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Features list */
+      .features ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .features li {
+        position: relative;
+        padding-left: 1.2rem;
+        margin: 0.5rem 0;
+      }
+
+      .features li::before {
+        content: "●";
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        top: 0.15rem;
+        font-size: 0.8rem;
+      }
+
+      /* Privacy */
+      .privacy ol {
+        counter-reset: item;
+        padding-left: 0;
+        margin: 1rem 0 0 0;
+      }
+
+      .privacy li {
+        list-style: none;
+        margin: 1rem 0;
+        padding-left: 1.8rem;
+        position: relative;
+      }
+
+      .privacy li::before {
+        counter-increment: item;
+        content: counter(item) ".";
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        color: var(--accent);
+      }
+
+      /* Footer */
+      footer {
+        background: #eee;
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 0.9rem;
+        color: var(--text-sub);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>体重体調日記</h1>
+      <p class="tagline">
+        GLP‑1RA治療をサポートする、あなた専用の体重・体調トラッカー
+      </p>
+    </header>
+
+    <section class="features">
+      <h2>アプリの特徴</h2>
+      <ul>
+        <li>体重と主要症状（食欲変化・吐き気・便通など）をワンタップで記録</li>
+        <li>GLP‑1受容体作動薬（GLP‑1RA）投与中の副作用モニタリングに対応</li>
+        <li>過去28日間の体重変化と症状をカレンダー形式で一目で確認</li>
+        <li>Apple&nbsp;Health連携により記録を安全に保存・活用</li>
+        <li>広告付きの無料版と、機能拡張のプレミアムアップグレードを選択可能</li>
+      </ul>
+    </section>
+
+    <section class="privacy">
+      <h2>プライバシーポリシー</h2>
+      <p>
+        Metamorph（以下「当社」）は、ユーザーのプライバシーを尊重し、以下の方針で個人情報を取り扱います。
+      </p>
+      <ol>
+        <li>
+          <strong>取得する情報</strong><br />当アプリは、体重、症状、ヘルスケアデータ、広告識別子など、ユーザーが入力・許可した情報を取得します。
+        </li>
+        <li>
+          <strong>利用目的</strong><br />取得した情報は、<em>（1）ユーザー自身の健康管理支援、（2）アプリの品質向上、（3）広告配信</em>の目的でのみ利用します。
+        </li>
+        <li>
+          <strong>第三者提供</strong><br />当社は、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者へ提供しません。
+        </li>
+        <li>
+          <strong>安全管理</strong><br />当社は、個人情報の漏えい、滅失又は毀損の防止その他個人情報の安全管理のために必要かつ適切な措置を講じます。
+        </li>
+        <li>
+          <strong>広告について</strong><br />当アプリはGoogle&nbsp;AdMobを利用し、広告表示のために広告識別子を使用する場合があります。
+        </li>
+        <li>
+          <strong>お問い合わせ</strong><br />プライバシーに関するご質問は、下記お問い合わせ先までご連絡ください。
+        </li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>© 2025 Metamorph</p>
+      <p>お問い合わせ: keisuke9n@gmail.com</p>
+    </footer>
+  </body>
+</html>
